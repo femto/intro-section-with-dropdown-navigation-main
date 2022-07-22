@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header flex flex-row justify-start big-container">
+    <img src="images/logo.svg" alt>
+    <nav>
+      <ul class="flex-row pos-absolute">
+        <li><a href="#" id="feature_menu_toggle">Features <img src="images/icon-arrow-down.svg"></a>
+          <div class="card d_none" id="feature_menu">
+            <ul>
+              <li><img src="images/icon-todo.svg" alt> <a href="#">Todo List</a></li>
+              <li><img src="images/icon-calendar.svg" alt> <a href="#">Calendar</a></li>
+              <li><img src="images/icon-reminders.svg" alt> <a href="#">Reminders</a></li>
+              <li><img src="images/icon-planning.svg" alt> <a href="#">Planning</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" id="company_menu_toggle">Company <img src="images/icon-arrow-down.svg"></a>
+          <div class="card d_none" id="company_menu">
+            <ul>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="flex-row">
+        <li><a href="#" >Login</a></li>
+        <li><a href="#" class="btn btn-white">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+  <main class="container grid mt-120 gap-0.13" id="hero">
+    <div>
+      <h1>Make remote work</h1>
+
+      <p>Get your team in sync, no matter your location. Streamline processes,
+      create team rituals, and watch productivity soar.
+      </p>
+
+      <a href="#" class="btn btn-black btn-lg">Learn more</a>
+
+      <ul class="flex-row mt-116" id="client">
+        <li><a href="#"><img src="images/client-databiz.svg" alt> </a></li>
+        <li><a href=""><img src="images/client-audiophile.svg" alt=""></a></li>
+        <li><a href=""><img src="images/client-meet.svg" alt=""></a></li>
+        <li><a href=""><img src="images/client-maker.svg" alt=""></a></li>
+      </ul>
+    </div>
+    <img src="images/image-hero-desktop.png" class="d_block" alt="">
+  </main>
+  <script src="js/toggle.js"></script>
+</body>
+</html>
