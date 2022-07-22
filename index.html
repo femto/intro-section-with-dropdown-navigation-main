@@ -13,39 +13,46 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header flex flex-row justify-start big-container">
+  <header class="header flex flex-row justify-start big-container pos-relative md:mt-25">
     <img src="images/logo.svg" alt>
-    <nav>
-      <ul class="flex-row pos-absolute">
-        <li><a href="#" id="feature_menu_toggle">Features <img src="images/icon-arrow-down.svg"></a>
-          <div class="card d_none" id="feature_menu">
-            <ul>
-              <li><img src="images/icon-todo.svg" alt> <a href="#">Todo List</a></li>
-              <li><img src="images/icon-calendar.svg" alt> <a href="#">Calendar</a></li>
-              <li><img src="images/icon-reminders.svg" alt> <a href="#">Reminders</a></li>
-              <li><img src="images/icon-planning.svg" alt> <a href="#">Planning</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="#" id="company_menu_toggle">Company <img src="images/icon-arrow-down.svg"></a>
-          <div class="card d_none" id="company_menu">
-            <ul>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-    <nav>
-      <ul class="flex-row">
-        <li><a href="#" >Login</a></li>
-        <li><a href="#" class="btn btn-white">Register</a></li>
-      </ul>
-    </nav>
+
+      <nav class="d_none pos-fixed pos-1 h-100vh bg-white md:d-block md:pos-static md:bg-transparent md:h-auto" id="nav1">
+        <ul class="flex  pos-absolute gap-2 md:pos-static md:flex-row md:gap-0">
+          <li><a href="#" id="feature_menu_toggle" class="flex-row1">Features<span class="w-10"><img src="images/icon-arrow-down.svg"></span></a>
+            <div class="card d_none md:top-50  md:pos-absolute" id="feature_menu">
+              <ul>
+                <li><img src="images/icon-todo.svg" alt> <a href="#">Todo List</a></li>
+                <li><img src="images/icon-calendar.svg" alt> <a href="#">Calendar</a></li>
+                <li><img src="images/icon-reminders.svg" alt> <a href="#">Reminders</a></li>
+                <li><img src="images/icon-planning.svg" alt> <a href="#">Planning</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" id="company_menu_toggle" class="flex-row1">Company <span class="w-10"><img src="images/icon-arrow-down.svg"></span></a>
+            <div class="card d_none md:top-50  md:pos-absolute" id="company_menu">
+              <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+          <li class="d_none mt-37 md:d-none" id="login_link"><a href="#" >Login</a></li>
+          <li class="d_none md:d-none" id="register_link"><a href="#" class="btn btn-white">Register</a></li>
+        </ul>
+      </nav>
+      <nav class="d_none pos-fixed md:d-block md:pos-static"  id="nav2">
+        <ul class="flex pos-absolute gap-2 md:pos-static md:flex-row">
+          <li><a href="#" >Login</a></li>
+          <li><a href="#" class="btn btn-white">Register</a></li>
+        </ul>
+      </nav>
+
+    <a href="#" id="hamburger" class="md:d-none"><img src="images/icon-menu.svg" alt="" id="hamburger_icon"></a>
+    <div id="hamburger_menu" class="d_none"></div>
+
   </header>
 
 
