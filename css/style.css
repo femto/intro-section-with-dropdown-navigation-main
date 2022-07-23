@@ -44,18 +44,24 @@ a {
     justify-content: start;
 }
 .header {
-    opacity: 0.6;
+    /*opacity: 0.6;*/
     color: black;
 }
 .header>*:nth-child(1) {
 
 }
 .header>*:nth-child(2) {
-    margin-left: 40px;
+    opacity: 0.6;
+    margin-left: 65px;
     margin-right:auto;
+
 }
 .header>*:nth-child(3) {
+    opacity: 0.6;
    margin-left: auto;
+}
+.header nav:nth-child(1) {
+
 }
 .flex-row1 {
     display: flex;
