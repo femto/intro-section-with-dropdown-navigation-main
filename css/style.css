@@ -107,7 +107,7 @@ a {
 .pos-fixed {
     position: fixed;
     top:40px;
-    right:0px;
+    right:0;
 }
 .pos-absolute {
     position: absolute;
@@ -117,7 +117,7 @@ a {
 }
 .pos-1 {
     top:40px;
-    right:0px;
+    right:0;
     width:232px;
 }
 
@@ -205,8 +205,8 @@ img {
 }
 .pos_fixed {
     position: fixed;
-    right:0px;
-    top:0px;
+    right:0;
+    top:0;
     /*background: red;*/
     width: 238px;
     height: 100vh;
@@ -215,8 +215,11 @@ img {
 .top-50 {
     top:50px;
 }
+.top-18 {
+    top:18px;
+}
 .right-0 {
-    right: 0px;
+    right: 0;
 }
 
 .bg-white {
@@ -280,6 +283,9 @@ img {
     }
     .md\:top-50 {
         top:50px;
+    }
+    .md\:top-18 {
+        top:18px;
     }
     .md\:bg-transparent {
         background: transparent;
