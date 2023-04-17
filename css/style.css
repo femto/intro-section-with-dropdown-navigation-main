@@ -133,7 +133,14 @@ a {
 }
 .pos-1 a, .pos-2 a {
     opacity:1;
-    font-weight:bold;
+    font-weight:200;
+    /*color:#676767;*/
+
+}
+.pos-1 a:hover, .pos-2 a:hover {
+    opacity:1;
+    font-weight:700;
+    /*color: #181818;*/
 }
 .h-100vh {
     height: 100vh;
